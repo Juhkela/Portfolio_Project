@@ -122,6 +122,11 @@ ul li a.current
   background-color: blue;
 }
 
+.current{
+  text-transform: uppercase;
+}
+
+
 
 @media screen and (min-width: 850px){
 
