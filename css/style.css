@@ -1,0 +1,134 @@
+body{
+  margin: 0;
+  padding: 0;
+  color: black;
+	font-family: 'Open Sans Condensed', sans-serif;
+  background-image: url('../imgs/background.jpg'); 
+}
+
+h1{
+  font-size: 3em;
+  text-align: center;
+  line-height: 2;
+}
+h2{
+  font-size: 2em;
+  text-align: center;
+  padding: 5px;
+}
+li{
+  font-size: 1.5em;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 25px;
+  padding: 0 30px;
+  text-align: center;
+}
+
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+form{
+  background: white;
+}
+
+a.skip:focus{
+  top:20px;
+  color: black;
+  text-decoration-style: solid;
+}
+
+*:focus{
+  border: 2px solid black;
+}
+
+footer{
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+header{
+  background: #C0E8D5;
+  border-bottom: 3px solid #50C7C7;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 35px;
+}
+
+.about-julia-text{
+  text-align: center;
+
+}
+.about-julia-painting{
+  grid-column: 1 / span 2;
+}
+
+.julia-image{
+  display: flex;
+  justify-content: center;
+}
+
+.gallery{
+  min-height: 600px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.gallery > img{
+  border: 10px #50C7C7 solid;
+  margin: 10px;
+  width: 300px;
+}
+
+.nav_links{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.nav_item a{
+  color: black;
+  text-decoration: none;
+}
+
+.nav_item a:hover, a:focus{
+  color: navy;
+  text-decoration: underline;
+}
+
+.nav_links li a:active {
+  background: #f1d74c;
+  color: #ffffff;
+}
+
+ul li a.current
+{
+  background-color: blue;
+}
+
+
+@media screen and (min-width: 850px){
+
+}
+
+@media screen and (prefers-reduced-motion){
+
+/* animation: none; */
+
+  }
