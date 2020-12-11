@@ -18,6 +18,8 @@ h2{
 }
 li{
   font-size: 1.5em;
+  padding-top: 8px;
+
 }
 
 p {
@@ -68,6 +70,12 @@ header{
   padding-bottom: 35px;
 }
 
+.logo > img{
+  max-height: 175px;
+  max-width: 175px;
+
+}
+
 .about-julia-text{
   text-align: center;
 
@@ -82,7 +90,7 @@ header{
 }
 
 .gallery{
-  min-height: 600px;
+  min-height: 300px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -91,7 +99,8 @@ header{
 }
 
 .gallery > img{
-  border: 10px #50C7C7 solid;
+  border: 5px #50C7C7;
+  border-style: ridge;
   margin: 10px;
   width: 300px;
 }
@@ -126,14 +135,82 @@ ul li a.current
   text-transform: uppercase;
 }
 
+.parallax img {
+  display: none;
+}
 
+@media screen and (min-width: 850px){ /* Desktop View */
 
-@media screen and (min-width: 850px){
+  header{ 
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  #main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery{
+    min-height: 600px;
+
+  }
+  .gallery > img{
+    border-width: 8px
+    border-style: ridge;
+    border-color: #d3d3d3;
+
+  }
+  .logo > img{
+    max-height: 375px;
+    max-width: 450px;
+}
+
+  .parallax {
+    background-image: url("../imgs/parallax.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+  .parallax img{
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+  @keyframes brush-movement{ /* I love W3 Schools! */
+    0%   {
+      top:0px;
+    }
+    50%  {
+      top: 200px;
+    }
+    100% {
+      top:0px;
+    }
+}
+
+  #animation{
+    animation-name: brush-movement;
+    animation-delay: 0.5s;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+  }
+
 
 }
 
-@media screen and (prefers-reduced-motion){
+@media screen and (max-width: 430px) { /* Tablet View */
 
-/* animation: none; */
 
+}
+
+@media screen and (prefers-reduced-motion){ /* Reduced Motion Media Query */
+
+  #animate {
+    animation: none;
   }
+}

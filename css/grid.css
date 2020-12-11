@@ -1,6 +1,6 @@
 .container{
   display: grid;
-  grid-row-gap: 15px;
+  grid-row-gap: 25px;
   grid-template-rows: auto auto auto;
   text-align: center;
 }
