@@ -24,7 +24,7 @@ li{
 
 p {
   font-family: sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   padding: 0 30px;
   text-align: center;
 }
@@ -54,11 +54,16 @@ a.skip:focus{
 }
 
 footer{
-  font-family: sans-serif;
-  background-color: black;
-  color: white;
-  padding: 30px;
+  background-color: #C0E8D5;
+  color: black;
+  padding: 25px;
   text-align: center;
+}
+
+footer p{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+  font-weight: 900;
 }
 
 header{
@@ -71,8 +76,8 @@ header{
 }
 
 .logo > img{
-  max-height: 175px;
-  max-width: 175px;
+  max-height: 300px;
+  max-width: 300px;
 
 }
 
@@ -184,7 +189,7 @@ ul li a.current
   @keyframes brush-movement{ /* I love W3 Schools! */
     0%   {
       top:0px;
-    }
+    } 
     50%  {
       top: 200px;
     }
@@ -200,17 +205,80 @@ ul li a.current
     animation-iteration-count: infinite;
   }
 
+  h1{
+    font-size: 3em;
+    text-align: center;
+    line-height: 2;
+  }
+  h2{
+    font-size: 2em;
+    text-align: center;
+    padding: 5px;
+  }
+  li{
+    font-size: 1.5em;
+    padding-top: 8px;
 
+  }
+
+  p {
+    font-family: sans-serif;
+    font-size: 25px;
+    padding: 0 30px;
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 430px) { /* Tablet View */
+@media screen and (max-width: 400px) {
+
+   header{ 
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  #main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery{
+    min-height: 600px;
+  }
+
+  .logo > img{
+    max-height: 210px;
+    max-width: 210px;
+}
+
+  h1{
+    font-size: 2em;
+    text-align: center;
+    line-height: 2;
+  }
+  h2{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px;
+  }
+  li{
+    font-size: 1.5em;
+    padding-top: 8px;
+
+  }
+
+  p {
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 0 30px;
+    text-align: center;
+  }
 
 
 }
 
 @media screen and (prefers-reduced-motion){ /* Reduced Motion Media Query */
 
-  #animate {
+  #animation {
     animation: none;
   }
 }
