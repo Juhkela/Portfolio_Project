@@ -229,7 +229,7 @@ ul li a.current
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
 
    header{ 
     justify-content: space-around;
