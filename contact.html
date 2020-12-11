@@ -10,6 +10,16 @@
   <link rel="stylesheet" type="text/css" href="css/grid.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="imgs/logo.png"/>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180252515-1"></script>
+  <script>
+  	 window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     gtag('config', 'UA-180252515-1');
+  </script>
+
 
 </head>
 <body>
@@ -39,20 +49,18 @@
 	    	<legend>Contact Form</legend>
 
 	    	<label for="name_id">Your Name</label>
-	    	<input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+	    	<input type="text" placeholder="Enter Your Name" id = "name_id" name="Name" required>
 
 	    	<label for="email_id">Your Email</label>
-	    	<input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+	    	<input type="email" placeholder="Enter Your Email" id = "email_id" name="Email" required>
 
 	    	<label for="phone_id">Your Phone Number (ex. 123-456-7890)</label>
-	    	<input type="tel" name="phone" placeholder="123-456-7890" id = "phone_id" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+	    	<input type="tel" name="Phone" placeholder="123-456-7890" id = "phone_id" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
 	    	<div><span>Format: 123-456-7890</span></div>
 
 
 	    	<label for="msg">Leave A Message</label>
-	    	<textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
-
-
+	    	<textarea placeholder="Enter your message" id = "msg" name="Users Message" required></textarea><br>
 	    	<input type="submit" value = "Contact Me">
 	 	</fieldset>
 	</form>
